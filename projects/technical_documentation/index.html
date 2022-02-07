@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <header id="title">Python Documentation</header>
+            <ul class="ul-container">
+                <li class="ul-item"><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li class="ul-item"><a class="nav-link" href="#Hello_World">Hello World</a></li>
+                <li class="ul-item"><a class="nav-link" href="#Variables">Variables</a></li>
+                <li class="ul-item"><a class="nav-link" href="#Declaring_Variables">Declaring Variables</a></li>
+                <li class="ul-item"><a class="nav-link" href="#Data_Types">Data Types</a></li>
+                <li class="ul-item"><a class="nav-link" href="#Variable_Scope">Variable Scope</a></li>
+                <li class="ul-item"><a class="nav-link" href="#Function_Declarations">Function Declarations</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Python is an easy-to-learn, powerful programming language. It has efficient high-level data structures
+                and a simple but effective approach to object-oriented programming.</p><br>
+            <p>Python's elegant syntax and dynamic typing make it an ideal language for scripting and rapid application
+                development in many areas on most platforms.</p>
+        </section>
+        <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
+            <p>To get started with Python, open a text editor and write your first "Hello World" Python code!</p>
+            <code>print("Hello World")</code>
+            <p>Run the code and watch the magic unfold!</p>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>You use variables as symbolic names for values in your program. The names of variables, called
+                identifiers, conform to certain rules.</p><br>
+            <p>A Python identifier must be unique and start with a character (A-Z/a-z). It cannot include any special
+                characters such
+                as * or ! either. They are also case-sensitive.</p>
+        </section>
+        <section class="main-section" id="Declaring_Variables">
+            <header>Declaring Variables</header>
+            <p>Python makes declaring variables very easy. For example:</p>
+            <code>a = 10 #this declares an integer</code>
+            <code>b = "Hello World!" #this declares a string</code>
+            <code>c = 9.0 #this declares a floating point</code>
+            <code>d = True #this declares a boolean</code>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <p>The built-in data types in Python include:</p>
+            <ul id="ul-data-types">
+                <li>str</li>
+                <li>int, float, complex</li>
+                <li>list, tuple, range</li>
+                <li>dict</li>
+                <li>set, frozenset</li>
+                <li>bool</li>
+                <li>bytes, bytearray, memoryview</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Variable_Scope">
+            <header>Variable Scope</header>
+            <p>When you declare a variable outside of any function, it is called a global variable, because it is
+                available to any other code in the document. When you declare a variable within a function, it is called
+                a local variable, because it is only available within that function.</p>
+        </section>
+        <section class="main-section" id="Function_Declarations">
+            <header>Function Declarations</header>
+            <p>A function definition consists of the function keyword, a list of arguments to the function, enclosed in
+                parentheses, and separated by commas.</p>
+        </section>
+    </main>
+</body>

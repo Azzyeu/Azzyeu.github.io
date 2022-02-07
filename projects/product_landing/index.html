@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+<body>
+    <header id="header">
+        <img id="header-img"
+            src="https://image.freepik.com/free-vector/piano-logo-template-design-illustration-abstract-piano-web-icons-logo_72830-8.jpg"
+            alt="">
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#how-it-works" class="nav-link">How it works</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="item">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <label for="email" id="email-label">Get lots of exclusive deals now!<br><input id="email"
+                            name="email" type="email" placeholder="Enter your email address"></label><br>
+                    <label for="submit" id="submit-label"><input id="submit" name="submit" type="submit"
+                            value="Sign up"></label>
+                </form>
+            </div>
+            <div class="item">
+                <section id="features">
+                    <h2>Features</h2>
+                    <ul class="ul-container">
+                        <img class="icon" id="img1"
+                            src="data:image/png;base64,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"
+                            alt="">
+                        <img class="icon" id="img2"
+                            src="https://uploads-ssl.webflow.com/60ad02e9bf612138c5766bac/60ad3a54b34f19a8801de37c_3.png"
+                            alt="">
+                        <img class="icon" id="img3"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1a3rdaLN02J76IOoIdpsRsKYTYWN4xuXaSzBw--9Mka7VvC_Vo24miog6I7Ti1sxdB5c&usqp=CAU"
+                            alt="">
+                        <li id="feature1">Premium Materials</li>
+                        <li id="feature2">Fast<br>Shipping</li>
+                        <li id="feature3">Quality Assurance</li>
+                        <p class="desc" id="desc1">Our pianos use the most durable and reverberant wood to
+                            ensure longevity and excellent sound quality.</p>
+                        <p class="desc" id="desc2">Lightning fast deliveries to ensure you can start making music as
+                            soon as possible!</p>
+                        <p class="desc" id="desc3">Each and every piano is tested by our experts to ensure there are no
+                            faults.</p>
+                    </ul>
+                </section>
+            </div>
+            <div class="item">
+                <section id="how-it-works">
+                    <iframe id="video" width="800" height="600" src="https://www.youtube.com/embed/WOKqwRXXm_o"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </section>
+            </div>
+            <div class="item">
+                <section id="pricing">
+                    <div class="pricing-container">
+                        <h2>Steinmayer</h2>
+                        <ul class="product">
+                            <li class="price">$1000</li>
+                            <li>Best entry level piano</li>
+                            <li>Chinese Spruce soundboard</li>
+                            <li>Good sound and warm tone</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-container">
+                        <h2>Kawai</h2>
+                        <ul class="product">
+                            <li class="price">$2000</li>
+                            <li>Contemporary design</li>
+                            <li>Attractive price</li>
+                            <li>Excellent digital piano</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-container">
+                        <h2>Yamaha</h2>
+                        <ul class="product">
+                            <li class="price">$3000</li>
+                            <li>Polished mahogany</li>
+                            <li>Includes SILENT Piano function</li>
+                            <li>World renowned piano sounds</li>
+                        </ul>
+                    </div>
+            </div>
+            </section>
+        </div>
+        </div>
+    </main>
+</body>

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background: lightblue;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    padding: 10px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+}
+
+#header-img {
+    max-height: 100%;
+    width: auto;
+}
+
+#nav-bar {
+    margin-top: 5em;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+li {
+    display: inline;
+    padding-right: 4em;
+    list-style: none;
+}
+
+main {
+    text-align: center;
+    padding-top: 220px;
+}
+
+label, input[type="email"] {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    width: 200px;
+    height: 35px;
+    background: #fff;
+}
+
+.ul-container {
+    display: grid;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    grid-template-columns: 1fr 1fr 6fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1.1em;
+    grid-template-areas:
+        "img1 header1 desc1"
+        "img2 header2 desc2"
+        "img3 header3 desc3";
+}
+
+#features { 
+    background: #000;
+    padding-top: 15px; 
+}
+
+.icon {
+    max-width: 45px;
+    height: auto;
+}
+
+#img1 { grid-area: img1; }
+#img2 { grid-area: img2; max-width: 50px; }
+#img3 { grid-area: img3; }
+
+#feature1 { grid-area: header1; }
+#feature2 { grid-area: header2; }
+#feature3 { grid-area: header3; }
+
+.desc {
+    text-align: left;
+}
+
+#desc1 { grid-area: desc1; }
+#desc2 { grid-area: desc2; }
+#desc3 { grid-area: desc3; }
+
+#pricing {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.pricing-container {
+    border: 1px solid #fff;
+    margin-right: 10px;
+    flex: 1 1 0px;
+    max-width: 200px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.price {
+    padding: 10px;
+    text-align: center;
+}
