@@ -1,54 +1,91 @@
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azam Butt – Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
 <body>
-    <div class="container">
-        <nav id="navbar">
-            <ul>
-                <li><a class="nav-link" href="#welcome-section">Welcome</a></li>
-                <li><a class="nav-link" href="#projects">Projects</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-logo">Azam's Portfolio</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
         </nav>
-        <main>
-            <section id="welcome-section">
-                <h1>Azam Butt</h1>
-                <p>Web Developer Portfolio</p>
-            </section>
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                    <div id="project1" class="project-tile">
-                        <a class="project-link" href="/projects/tribute/index.html">Tribute Page</a>
-                    </div>
-                    <div id="project2" class="project-tile">
-                        <a class="project-link" href="/projects/survey_form/index.html">Survey Form</a>
-                    </div>
-                    <div id="project3" class="project-tile">
-                        <a class="project-link" href="/projects/product_landing/index.html">Product Landing
-                            Page</a>
-                    </div>
-                    <div id="project4" class="project-tile">
-                        <a class="project-link" href="/projects/technical_documentation/index.html">Technical
-                            Documentation</a>
-                    </div>
-                    <div id="project5" class="project-tile">
-                        <a class="project-link" href="#">Dijkstra's Algorithm (WIP)</a>
-                    </div>
-                    <div id="project6" class="project-tile">
-                        <a class="project-link" href="#">#</a>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section no-image">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hello, I'm <span class="highlight">Azam</span></h1>
+                    <p class="subtitle">Computer Science Student &amp; Aspiring Cloud Engineer</p>
+                    <p class="hero-bio">
+                        Welcome to my personal portfolio. I'm passionate about building <strong>cloud‑native data analytics pipelines</strong>, crafting <strong>interactive data visualisations</strong>, and turning ideas into elegant, user‑centred software. As a final‑year BSc Computer Science student at Newcastle University, I'm excited to tackle real‑world challenges where technology can create positive impact.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">View My Projects</a>
+                        <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
                     </div>
                 </div>
-            </section>
-            <section id="contact">
-                <h2>Contact</h2>
-                <div id="profile-links">
-                    <a class="profile-link" href="https://github.com/Azzyeu" target="_blank"><img class="icon"
-                            src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
-                    <a class="profile-link" href="https://www.linkedin.com/in/azam-butt" target="_blank"><img
-                            class="icon" src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt=""></a>
+            </div>
+        </section>
+
+        <section id="quick-intro" class="quick-intro-section">
+            <div class="container">
+                <h2>A Little About Me</h2>
+                <p>
+                    I'm a dedicated Computer Science student on track for a <strong>First‑Class Honours</strong> degree, with a strong foundation in <em>software development</em> and <em>cloud architecture</em>. Comfortable across the full stack – from Python back‑ends to responsive JavaScript front‑ends – I'm now seeking graduate roles where I can keep learning, ship quality code, and add value from day one. Learn more <a href="about.html">about me</a>.
+                </p>
+                <div class="featured-projects-preview">
+                    <h3>Featured Projects</h3>
+                    <div class="project-cards-preview">
+                        <div class="project-card-mini">
+                            <img src="images/placeholder-project1.jpg" alt="Serverless Data Analytics Pipeline thumbnail">
+                            <h4>Serverless Data Analytics Pipeline</h4>
+                            <p>My final‑year project: a fully serverless AWS solution for real‑time ingestion &amp; visual monitoring of IoT data.</p>
+                            <a href="projects.html#project1" class="btn-view-details">Details</a>
+                        </div>
+                        <div class="project-card-mini">
+                            <img src="images/placeholder-project2.jpg" alt="todo: projoect2 thumbnail">
+                            <h4>[todo: PROJECT 2]</h4>
+                            <p>[todo: Description]</p>
+                            <a href="projects.html#project2" class="btn-view-details">Details</a>
+                        </div>
+                    </div>
+                    <a href="projects.html" class="btn btn-secondary" style="margin-top: 20px;">See All Projects</a>
                 </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Azam. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/azam-butt/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Azzyeu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:azam.b12354@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/script.js"></script>
 </body>
+</html>
